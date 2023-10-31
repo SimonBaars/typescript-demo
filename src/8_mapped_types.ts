@@ -85,11 +85,11 @@ console.log(sample8);
 
 // StringifyFields is a mapped type that takes an object type and returns an object type with the same keys and values, but with all values stringified.
 type StringifyFields<T> = {
-  [K in keyof T]: T[K] extends Function ? T[K] : string;
+  [K in keyof T]: T[K] extends () => string ? T[K] : string;
 };
 const sample9: StringifyFields<{
   first: string;
-  second: () => void;
+  second: () => string;
 }> = {
   first: "wibble",
   second: () => "wobble",

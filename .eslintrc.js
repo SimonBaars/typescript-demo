@@ -27,7 +27,6 @@ module.exports = {
     quotes: ["error", "double"],
     "import/no-unresolved": 0,
     indent: "off",
-    // "max-len": ["error", {"code": 2000}],
     "require-jsdoc": 0,
     "linebreak-style": ["error", "unix"],
     semi: ["error", "always"],
