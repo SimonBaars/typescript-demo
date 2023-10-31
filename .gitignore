@@ -1,3 +1,6 @@
+# Why is this not in the default .gitignore for Node?
+lib
+
 # Logs
 logs
 *.log
