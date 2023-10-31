@@ -1,6 +1,9 @@
 {
   "include": [
     ".eslintrc.js"
-  ]
+  ],
+  "ts-node": {
+    "transpileOnly": true,
+  }
 }
   

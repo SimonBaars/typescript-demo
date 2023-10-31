@@ -100,7 +100,7 @@
                 "<node_internals>/**"
             ],
             "program": "lib/8_mapped_types.js",
-            "preLaunchTask": "tsc: build - tsconfig.dev.json",
+            "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [
                 "${workspaceFolder}/lib/**/*.js"
             ]
@@ -113,7 +113,7 @@
                 "<node_internals>/**"
             ],
             "program": "lib/9_discriminated_unions.js",
-            "preLaunchTask": "tsc: build - tsconfig.dev.json",
+            "preLaunchTask": "tsc: build - tsconfig.json",
             "outFiles": [
                 "${workspaceFolder}/lib/**/*.js"
             ]
