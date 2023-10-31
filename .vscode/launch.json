@@ -104,6 +104,19 @@
             "outFiles": [
                 "${workspaceFolder}/lib/**/*.js"
             ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "9. Discriminated Unions",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "lib/9_discriminated_unions.js",
+            "preLaunchTask": "tsc: build - tsconfig.dev.json",
+            "outFiles": [
+                "${workspaceFolder}/lib/**/*.js"
+            ]
         }
     ]
 }
