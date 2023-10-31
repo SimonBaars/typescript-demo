@@ -92,5 +92,18 @@
                 "${workspaceFolder}/lib/**/*.js"
             ]
         },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "8. Mapped Types",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "lib/8_mapped_types.js",
+            "preLaunchTask": "tsc: build - tsconfig.dev.json",
+            "outFiles": [
+                "${workspaceFolder}/lib/**/*.js"
+            ]
+        }
     ]
 }
