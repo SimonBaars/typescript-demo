@@ -120,3 +120,27 @@ const sample11: UnaryMethodInputs<
   "second"
 > = 1234;
 console.log(sample11);
+
+// ResolveFunctionFields is a mapped type that takes an object type and returns an object type with the same keys and values, but with all function fields resolved to their return type.
+type CallFunctionsInObject<T> = {
+  [K in keyof T]: T[K] extends () => infer R ? R : T[K];
+};
+
+function resolveFunctions<T>(obj: T): CallFunctionsInObject<T> {
+  const result: any = {};
+  for (const key in obj) {
+    if (typeof obj[key] === "function") {
+      result[key] = (obj[key] as any)();
+    } else {
+      result[key] = obj[key];
+    }
+  }
+  return result;
+}
+
+const sample12 = resolveFunctions({
+  first: "wibble",
+  second: () => "wobble",
+});
+
+console.log(sample12);
