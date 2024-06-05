@@ -1,3 +1,8 @@
+// Note on usage:
+// Type: defining custom types that won’t be extended.
+// Interface: creating contracts for object shapes that can be extended or implemented by classes.
+// Class: constructing objects with associated methods and internal state.
+
 type Pair = {
   first: string;
   second: number;
